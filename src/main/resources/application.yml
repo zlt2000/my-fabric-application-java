@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: my-fabric-application-java
+
+fabric:
+  # wallet文件夹路径(自动创建)
+  walletDirectory: wallet
+  # 网络配置文件路径
+  networkConfigPath: connection.json
+  # 用户证书路径
+  certificatePath: crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem
+  # 用户私钥路径
+  privateKeyPath: crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/priv_sk
+  # 访问的组织名
+  mspid: Org1MSP
+  # 用户名
+  username: user1
+  # 通道名字
+  channelName: mychannel
+  # 链码名字
+  contractName: mycc
